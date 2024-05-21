@@ -8,17 +8,49 @@
       {
       
       }
+
+      div {
+        font-size: 18px;
+        font-weight: 400px;
+      }
+      li {
+        font-size:14px; 
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .highlight{
+        background-color: yellow;
+      }
+      #main-span{
+        color:blue;
+      }
+      span b{
+        background-color: green
+      }
+      ul li:nth-child(odd) {
+        background-color: red
+      }
+      li[data-info="special"] {
+        font-style: italic;
+      }
+      li:hover {
+        background-color:lightblue
+      }
+      li: :first-letter{
+        font-size: 1.5em;
+        font-weight: bold;
+      }
     </style>
   </head>
   <body>
+    <p style="color:blue;">This is the blue text</p>"
     <div>This is a div</div>
-    <span>This is a span</span>
-    <div>This is a div</div>
+    <span id="main-span">This is a span</span>
+    <div class="highlight">This is a div</div>
       <span>
         <b>Nested text goes here</b>
       </span>
     <ul>
-      <li>Item 1</li>
+      <li data-info="special"Item</li>
       <li>Item 2</li>
       <li>Item 3</li>
       <li>Item 4</li>
